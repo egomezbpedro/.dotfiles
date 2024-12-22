@@ -1,0 +1,13 @@
+[user]
+	email = pgomezbetancourt@deloitte.es
+	name = Gomez Betancourt, Pedro Enrique
+[credential "https://github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[rerere]
+	enabled = true
+[init]
+	defaultBranch = master
