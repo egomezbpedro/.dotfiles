@@ -1,13 +1,28 @@
 [user]
-	email = pgomezbetancourt@deloitte.es
+	email = egomezbpedro@gmail.com
 	name = Gomez Betancourt, Pedro Enrique
+
 [credential "https://github.com"]
 	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+	helper = !/usr/bin/gh auth git-credential
+
+[includeIf "gitdir:~/images/"]
+    path = ~/Images/.gitconfig
+
+[includeIf "gitdir:~/personal/"]
+    path = ~/personal/.gitconfig
+
+[includeIf "gitdir:~/tools/"]
+    path = ~/tools/.gitconfig
+
+[commit]
+    gpgsign = false
+
 [rerere]
-	enabled = true
+    enabled = true
+
 [init]
-	defaultBranch = master
+    defaultBranch = main
