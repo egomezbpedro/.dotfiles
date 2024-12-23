@@ -129,3 +129,7 @@ export PATH="/home/linuxbrew/.linuxbrew/opt/node@18/bin:$PATH"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+tmux-git-autofetch() {(/home/gpedro/.tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)}
+add-zsh-hook chpwd tmux-git-autofetch
+    
